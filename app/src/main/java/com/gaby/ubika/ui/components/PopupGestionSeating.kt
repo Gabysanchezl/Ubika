@@ -52,8 +52,12 @@ fun PopupGestionSeating(
 
     val estudiantesFiltrados = estudiantesDisponibles
         .filter { it.id.isNotBlank() }      //Filtro estudiantes que tienen ID válido
-        .filter { carreraSeleccionada.isBlank() || it.carrera == carreraSeleccionada }
-        .filter {                              //búsqueda por nombre o matrícula
+        .filter {
+            carreraSeleccionada.isBlank() ||
+                    carreraSeleccionada == "Todas" || // 🔹 muestra todos
+                    it.carrera == carreraSeleccionada
+        }
+        .filter {
             it.nombre.contains(filtroTexto, ignoreCase = true) ||
                     it.id.contains(filtroTexto, ignoreCase = true)
         }

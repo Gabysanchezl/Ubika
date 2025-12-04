@@ -1,5 +1,6 @@
 package com.gaby.ubika.ui.screens
 
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
@@ -7,6 +8,7 @@ import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Build
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -40,21 +42,19 @@ fun BottomNavigationBar(navController: NavController) {
                     }
                 },
                 icon = {
+                    val iconSize = if (currentRoute == item.route) 30.dp else 24.dp
+
                     Icon(
                         imageVector = item.icon,
                         contentDescription = item.label,
-                        tint = if (currentRoute == item.route) MaterialTheme.colorScheme.primary
+                        modifier = Modifier.size(iconSize),
+                        tint = if (currentRoute == item.route)
+                            MaterialTheme.colorScheme.primary
                         else MaterialTheme.colorScheme.onSurface
                     )
                 },
-                label = {
-                    Text(
-                        text = item.label,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = if (currentRoute == item.route) MaterialTheme.colorScheme.primary
-                        else MaterialTheme.colorScheme.onSurface
-                    )
-                }
+                alwaysShowLabel = false,
+                label = null
             )
         }
     }

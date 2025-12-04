@@ -33,7 +33,7 @@ fun AdminHeader(viewModel: AdminViewModel) {
         )
         Column {
             Text(viewModel.nombreAdmin, style = MaterialTheme.typography.titleMedium)
-            Text("Panel principal!", style = MaterialTheme.typography.titleLarge)
+            Text("Panel principal", style = MaterialTheme.typography.titleLarge)
 
         }
     }
