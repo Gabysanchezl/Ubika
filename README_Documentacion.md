@@ -20,15 +20,23 @@
 ---
 
 ## 📘 Tabla de Contenidos
+
 - [¿Qué es UBIKA?](#-qué-es-ubika)
 - [¿Por qué usar UBIKA?](#-por-qué-usar-ubika)
 - [Características Principales](#-características-principales)
-- [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
-- [Estructura del Código](#-estructura-del-código)
+- [Ventajas Técnicas](#-ventajas-técnicas)
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
 - [Instalación y Ejecución](#-instalación-y-ejecución)
-- [Casos de Uso](#-casos-de-uso)
-- [Roadmap](#-roadmap)
+- [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+- [Cómo usar UBIKA](#-cómo-usar-ubika)
+- [Tips y Mejoras Prácticas](#-tips-y-mejoras-prácticas)
+- [Flujo de Datos](#-flujo-de-datos)
+- [Estructura del Código](#-estructura-del-código)
+- [Solución de Problemas](#-solución-de-problemas)
+- [Conclusión](#-conclusión)
+- [Futuras Mejora](#-futuras-mejoras)
+- [Contribución](#-contribución)
+- [Créditos](#-créditos)
 
 
 ---
